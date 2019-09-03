@@ -1,0 +1,21 @@
+
+Holly Zhang
+L-545
+
+Language Code: MG (Malagasy)
+
+Part 1:
+
+Part 2:
+
+Part 3:
+	1. sed 's/[^a-zA-ZIӀ]\+/\n/g' < wiki.txt | sort | uniq -c | sort -nr > wiki3_1.hist
+	2. sed 's/[^a-zA-ZIӀ]\+/\n/g' < wiki.txt | sort | uniq -c | sort -f > wiki3_2.hist
+	3. sed 's/[^a-zA-ZIӀ]\+/\n/g' < wiki.txt | sort | uniq -c | sort -d | rev > wiki3_3.hist
+Part 4:
+
+Part 5:
+
+Part 6:
+
+Part 7:
