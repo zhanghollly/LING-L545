@@ -3,6 +3,8 @@ Holly Zhang
 L-545
 
 Language Code: MG (Malagasy)
+alphabet: a, b, d, e, f, g, h, i, j, k, l, m, n, o, p, r, s, t, v, y, z
+vowels: i, y, o, e, ô, ao, oa, a
 
 Part 1:
 
@@ -17,5 +19,12 @@ Part 4:
 Part 5:
 
 Part 6:
+	number of uppercase words:
+	number of lowercase words:
+	number of 4-letter words:
+	words with no vowels(Y/N):
+	1-syllable words:
+	2-syllable words:
 
 Part 7:
+
