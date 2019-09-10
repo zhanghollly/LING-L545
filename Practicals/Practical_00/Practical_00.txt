@@ -19,12 +19,21 @@ Part 4:
 Part 5:
 
 Part 6:
-	number of uppercase words:
-	number of lowercase words:
+	number of uppercase words: 627797
+	sed 's/[^a-zA-ZIӀ]\+/\n/g' < wiki.txt | grep -c '^[A-Z]'
+
+	number of lowercase words: 2367213
+	sed 's/[^a-zA-ZIӀ]\+/\n/g' < wiki.txt | grep -c '^[a-z]'
+
 	number of 4-letter words:
+
 	words with no vowels(Y/N):
-	1-syllable words:
-	2-syllable words:
+
+	1-syllable words: 861313
+	sed 's/[^a-zA-ZIӀ]\+/\n/g' < wiki.txt | grep -i -c '^[^iyoeôa]*[iyoeôa][^iyoeôa]*$'
+
+	2-syllable words: 2055763
+	This gives 2 or more syllables: sed 's/[^a-zA-ZIӀ]\+/\n/g' < wiki.txt | grep -i -c '[iyoeôa].*[iyoeôa]'
 
 Part 7:
 
