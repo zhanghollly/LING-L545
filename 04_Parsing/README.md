@@ -1,19 +1,19 @@
-#### Holly Zhang (zhanghol)
-#### LING-L545
-#### Practical 04: Train, parse and evaluate using UDPipe
+Holly Zhang (zhanghol)
+LING-L545
+Practical 04: Train, parse and evaluate using UDPipe
 
 
-#### Training the English Model
+### Training the English Model
 
 `./udpipe/src/udpipe --tokenizer none --tagger none --train en.udpipe < ./UD_English-ParTUT/en_partut-ud-train.conllu`
 
 
-#### Parse testing data in the English Model
+### Parse testing data in the English Model
 
 `./udpipe/src/udpipe --parse en.udpipe < ./UD_English-ParTUT/en_partut-ud-test.conllu > TESTINGOUTEN.conllu`
 
 
-#### Evaluate parser performance
+### Evaluate parser performance
 
 `python3 ./evaluation_script/conll17_ud_eval.py --verbose ./UD_English-ParTUT/en_partut-ud-test.conllu TESTINGOUTEN.conllu`
 
@@ -32,7 +32,7 @@ UAS        |     86.77 |     86.77 |     86.77 |     86.77
 LAS        |     85.18 |     85.18 |     85.18 |     85.18
 
 
-#### Tree Inspections
+### Tree Inspections
 
 1. Transport is tagged as a noun but it is actually an adjective since it is describing 'safety'.
 ```
