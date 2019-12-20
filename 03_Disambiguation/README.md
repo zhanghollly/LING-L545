@@ -26,7 +26,7 @@ LAS        |    100.00 |    100.00 |    100.00 |    100.00
 Changing the prefix to include three letters instead of two increased the prefomance a little.
 
 Metrics    | Precision |    Recall |  F1 Score | AligndAcc
------------+-----------+-----------+-----------+-----------
+----------:|:---------:|:---------:|----------:|-----------
 Tokens     |    100.00 |    100.00 |    100.00 |
 Sentences  |    100.00 |    100.00 |    100.00 |
 Words      |    100.00 |    100.00 |    100.00 |
