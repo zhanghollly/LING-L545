@@ -1,0 +1,106 @@
+https://padlite.spline.de/p/l545
+
+
+• Что было сделано ? "What was done?"
+• Кто продал книгу? "Who sold the book?"
+• Кому продала Маша книгу ? / Кому Маша продала книгу ? "To whom did Masha sell the book?"
+• Где Маша продала книгу ? "Where did Masha sell the book?"
+
+Маша продала книгу       Даше      в метро 
+Masha sold        the.book to.Dasha in the.metro
+
+В метро продала книгу Маша Даше
+In the.metro sold  the.book Masha to.Dasha
+
+Маша продала книгу Даше в метро
+
+Даша купила книгу у Даши в метро
+Dasha bought the.book from Dasha in the.metro
+
+Книга была продана Машей Даше в метро
+The.book was sold by.Masha to.Dasha in the.metro
+
+Продажа книги Машей в метро
+The.sale of.the.book by.Masha in the.metro
+
+
+Маша разбила окно 
+Masha broke the.window
+
+У Саши болит голова
+at Sasha hurts head
+
+Ветер сдувал снег
+The.window blew the.snow
+
+
+Маша продала книгу
+Masha sold the.book
+
+Она написала письмо ручкой
+She wrote the.letter with.the.pen
+
+Я купил тебе кофе
+I bought you coffee
+
+Ты не приехала из Кызыла?
+You not come from Kyzyl ?
+
+Я хочу в Якутск
+I want [to go] to Yakutsk
+
+----------------------------------------------------------------------
+semantic roles
+
+volitional actors: the thing doing the action, usually animate
+ex: she threw the ball. -> she is the thrower
+not an example: the ball dropped. -> the ball is the subject but not causing the drop
+
+Role:Definition
+
+Agent: The volitional causer of an event
+ex: I love apples -> I
+
+Experiencer: 
+ex: the tornado destroyed the village -> village
+
+Instrument:
+ex: john kicked the ball with his foot -> with his foot
+
+Beneficiary: the beneficiary of an event. (positive receiving?)
+ex: john kicked the ball to me -> to me
+
+Source:
+ex: I came from Moscow -> from Moscow 
+
+Goal:
+ex: I wan to go to Yakahama, Japan. -> to Yakahama, Japan
+
+----------------------------------------------------------------------------
+Verbs have a thematic grid
+
+---------------------------------------------------------------------------
+Differences between adjuncts, arguments, and modifiers?
+- arguments are required to make complete predicates
+- adjunct is not required but adds more to the predicate
+- modifiers are not required either
+
+Secondary predicate
+ex: I painted the room naked. 1.painted 2.naked
+
+----------------------------------------------------------------------------
+FrameNet
+
+What is a frame?
+----------------------------------------------------------------------------
+Semantic Role Labelling
+
+why prune and identify arguments?
+- faster processing and takes away unlikely phrases
+- data is mostly sparse
+
+Identifying arguments:
+- go through the parse tree and find the predicate
+- in the predicate, look for the arguments
+
+

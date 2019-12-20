@@ -1,0 +1,71 @@
+Multichar_Symbols
+
+%<v%>                ! Verb
+%<tv%>               ! Transitive
+%<perf%>             !
+
+%<o_sg1%>            ! Object First Person Singular	"", "me"
+%<o_sg2%>            ! Object Second Person Singular	"at", "you"
+%<o_sg3%>            ! Object Third Person Singular	"", "him/her/it"
+
+%<s_sg1%>            ! Subject First Person Singular	"nu", "I"
+%<s_sg2%>            ! Subject Second Person Singular	"a", "you"
+%<s_sg3%>            ! Subject Thrid Person Singular	"u", "he/she/it"
+
+%<o_pl1%>            ! Object First Person Plural	"", "us"
+%<o_pl2%>            ! Object Second Person Plural	"", "you lot"
+%<o_pl3%>            ! Object Third Person Plural	"e", "them"
+
+%<s_pl1%>            ! Subject First Person Plural	"qa", "we"
+%<s_pl2%>            ! Subject Second Person Plural	"i", "you lot"
+%<s_pl3%>            ! Subject Third Person Plural	"ki", "they"
+
+
+
+LEXICON Root
+Prefix ;
+
+LEXICON Prefixes
+
+ObjArg ;
+
+LEXICON ObjAgr
+
+SubjArg ;
+
+LEXICON SubjAgr
+
+Verb ;
+
+LEXICON Verb
+# ;
+
+урам%<n%>:урам # ;   ! "улица", "street"
+tzʼät<v><tv><perf><o_sg2><s_sg1> 	! "xatnutzʼät", "I saw you."
+tzʼät<v><tv><perf><o_sg3><s_sg1> 	! "xnutzʼät", "I saw him/her/it."
+tzʼät<v><tv><perf><o_pl2><s_sg1> 	! "xixnutzʼät", "I saw you lot."
+tzʼät<v><tv><perf><o_pl3><s_sg1> 	! "xenutzʼät", "I saw them."
+tzʼät<v><tv><perf><o_sg1><s_sg2> 	! "xinatzʼät", "You saw me."
+tzʼät<v><tv><perf><o_sg3><s_sg2> 	! "xatzʼät", "You saw him/her/it."
+tzʼät<v><tv><perf><o_pl1><s_sg2> 	! "xojatzʼät", "You saw us."
+tzʼät<v><tv><perf><o_pl3><s_sg2> 	! "xeatzʼät", "You saw them."
+tzʼät<v><tv><perf><o_sg1><s_sg3> 	! "xirutzʼät", "He/She/It saw me."
+tzʼät<v><tv><perf><o_sg2><s_sg3> 	! "xatrutzʼät", "He/She/It saw you."
+tzʼät<v><tv><perf><o_sg3><s_sg3> 	! "xutzʼät", "He/She/It saw he/she/it."
+tzʼät<v><tv><perf><o_pl1><s_sg3> 	! "xojtutzʼät", "He/She/It saw us."
+tzʼät<v><tv><perf><o_pl2><s_sg3> 	! "xixrutzʼät", "He/She/It saw you lot."
+tzʼät<v><tv><perf><o_pl3><s_sg3> 	! "xerutzʼät", "He/She/It saw them."
+tzʼät<v><tv><perf><o_sg2><s_pl1> 	! "xatqatzʼät", "We saw you."
+tzʼät<v><tv><perf><o_sg3><s_pl1> 	! "xqatzʼät", "We saw him/her/it."
+tzʼät<v><tv><perf><o_pl2><s_pl1> 	! "xixqatzʼät", "We saw you lot."
+tzʼät<v><tv><perf><o_pl3><s_pl1> 	! "xeqatzʼät", "We saw them."
+tzʼät<v><tv><perf><o_sg1><s_pl2> 	! "xinitzʼät", "You lot saw me."
+tzʼät<v><tv><perf><o_sg3><s_pl2> 	! "xitzʼät", "You lot saw him/her/it."
+tzʼät<v><tv><perf><o_pl1><s_pl2> 	! "xojʼitzʼät", "You lot saw us."
+tzʼät<v><tv><perf><o_pl3><s_pl2> 	! "xeʼitzʼät", "You lot saw them."
+tzʼät<v><tv><perf><o_sg1><s_pl3> 	! "xinkitzʼät", "They saw me."
+tzʼät<v><tv><perf><o_sg2><s_pl3> 	! "xatkitzʼät", "They saw you."
+tzʼät<v><tv><perf><o_sg3><s_pl3> 	! "xkitzʼät", "They saw him/her/it."
+tzʼät<v><tv><perf><o_pl1><s_pl3> 	! "xojkitzʼät", "They saw us."
+tzʼät<v><tv><perf><o_pl2><s_pl3> 	! "xixkitzʼät", "They saw you lot."
+tzʼät<v><tv><perf><o_pl3><s_pl3> 	! "xekitzʼät", "They saw them."

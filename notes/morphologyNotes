@@ -1,0 +1,8 @@
+cd into 02_Morphology
+vi .gitignore
+git add .gitignore
+git commit -a -m "add gitignore"
+git push
+git add*
+
+We want gitignore because it will ignore the compiled files 
