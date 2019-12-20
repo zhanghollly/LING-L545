@@ -1,39 +1,56 @@
-**Holly Zhang (zhanghol)
+Holly Zhang (zhanghol)
+
 LING-L545
+
 Practical 04: Train, parse and evaluate using UDPipe
-***
 
-###Training the English Model
-./udpipe/src/udpipe --tokenizer none --tagger none --train en.udpipe < ./UD_English-ParTUT/en_partut-ud-train.conllu
 
-###Parse testing data in the English Model
+Training the English Model
+
+`./udpipe/src/udpipe --tokenizer none --tagger none --train en.udpipe < ./UD_English-ParTUT/en_partut-ud-train.conllu
+
+
+Parse testing data in the English Model
+
 `./udpipe/src/udpipe --parse en.udpipe < ./UD_English-ParTUT/en_partut-ud-test.conllu > TESTINGOUTEN.conllu`
 
-###Evaluate parser performance
+
+Evaluate parser performance
+
 `python3 ./evaluation_script/conll17_ud_eval.py --verbose ./UD_English-ParTUT/en_partut-ud-test.conllu TESTINGOUTEN.conllu`
 
 Metrics    | Precision |    Recall |  F1 Score | AligndAcc
+
 -----------+-----------+-----------+-----------+-----------
 Tokens     |    100.00 |    100.00 |    100.00 |
+
 Sentences  |    100.00 |    100.00 |    100.00 |
+
 Words      |    100.00 |    100.00 |    100.00 |
+
 UPOS       |    100.00 |    100.00 |    100.00 |    100.00
+
 XPOS       |    100.00 |    100.00 |    100.00 |    100.00
+
 Feats      |    100.00 |    100.00 |    100.00 |    100.00
+
 AllTags    |    100.00 |    100.00 |    100.00 |    100.00
+
 Lemmas     |    100.00 |    100.00 |    100.00 |    100.00
+
 UAS        |     86.77 |     86.77 |     86.77 |     86.77
+
 LAS        |     85.18 |     85.18 |     85.18 |     85.18
 
-####Tree Inspections
 
-1. Transport is labelled as a noun but it is actually an adjective since it is describing 'safety'.
+Tree Inspections
+
+1. Transport is tagged as a noun but it is actually an adjective since it is describing 'safety'.
 ```
 # sent_id = en_partut-ud-184
 # text = Transport safety has sadly been in the news recently:
 1       Transport       transport       NOUN    S       Number=Sing     2       nmod    _       _
-2       safety  safety  NOUN    S       Number=Sing     8       nsubj   _       _
-3       has     have    AUX     VA      Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin   8       aux     _       _
+2       safety  safety  NOUN    S       Number=Sing     8       nsubj   _       3       has     have    AUX     VA      Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin   8       aux     _       _
 4       sadly   sadly   ADV     B       _       8       advmod  _       _
 5       been    be      AUX     V       Tense=Past|VerbForm=Part        8       cop     _       _
 6       in      in      ADP     E       _       8       case    _       _
@@ -274,26 +291,3 @@ LAS        |     85.18 |     85.18 |     85.18 |     85.18
 13      Council Council NOUN    S       Number=Sing     10      nmod    _       SpaceAfter=No
 14      .       .       PUNCT   FS      _       8       punct   _       _
 ```
-
----------------------------------------------------------------------------------------------------------
-Training the Latin Model
-`./udpipe/src/udpipe --tokenizer none --tagger none --train la.udpipe < ./UD_Latin-PROIEL/la_proiel-ud-train.conllu`
-
-Parse the testing data in the latin model
-`./udpipe/src/udpipe --parse la.udpipe < ./UD_Latin-PROIEL/la_proiel-ud-test.conllu > TESTINGOUTLA.conllu`
-
-Evaluate the performance of the parser
-`python3 ./evaluation_script/conll17_ud_eval.py --verbose ./UD_Latin-PROIEL/la_proiel-ud-test.conllu TESTINGOUTLA.conllu`
-
-Metrics    | Precision |    Recall |  F1 Score | AligndAcc
------------+-----------+-----------+-----------+-----------
-Tokens     |    100.00 |    100.00 |    100.00 |
-Sentences  |    100.00 |    100.00 |    100.00 |
-Words      |    100.00 |    100.00 |    100.00 |
-UPOS       |    100.00 |    100.00 |    100.00 |    100.00
-XPOS       |    100.00 |    100.00 |    100.00 |    100.00
-Feats      |    100.00 |    100.00 |    100.00 |    100.00
-AllTags    |    100.00 |    100.00 |    100.00 |    100.00
-Lemmas     |    100.00 |    100.00 |    100.00 |    100.00
-UAS        |     71.55 |     71.55 |     71.55 |     71.55
-LAS        |     67.37 |     67.37 |     67.37 |     67.37
