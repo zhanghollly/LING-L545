@@ -1,8 +1,6 @@
-###Holly Zhang (zhanghol)
-
-###LING-L545
-
-###Practical 04: Train, parse and evaluate using UDPipe
+Holly Zhang (zhanghol)
+LING-L545
+Practical 04: Train, parse and evaluate using UDPipe
 
 
 Training the English Model
@@ -17,7 +15,7 @@ Evaluate parser performance
 `python3 ./evaluation_script/conll17_ud_eval.py --verbose ./UD_English-ParTUT/en_partut-ud-test.conllu TESTINGOUTEN.conllu`
 
 Metrics    | Precision |    Recall |  F1 Score | AligndAcc
------------+-----------+-----------+-----------+-----------
+-----------|:---------:|----------:|----------:|-----------
 Tokens     |    100.00 |    100.00 |    100.00 |
 Sentences  |    100.00 |    100.00 |    100.00 |
 Words      |    100.00 |    100.00 |    100.00 |
