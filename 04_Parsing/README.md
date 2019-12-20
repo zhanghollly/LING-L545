@@ -1,45 +1,30 @@
 Holly Zhang (zhanghol)
-
 LING-L545
-
 Practical 04: Train, parse and evaluate using UDPipe
 
 
 Training the English Model
-
-`./udpipe/src/udpipe --tokenizer none --tagger none --train en.udpipe < ./UD_English-ParTUT/en_partut-ud-train.conllu
+`./udpipe/src/udpipe --tokenizer none --tagger none --train en.udpipe < ./UD_English-ParTUT/en_partut-ud-train.conllu`
 
 
 Parse testing data in the English Model
-
 `./udpipe/src/udpipe --parse en.udpipe < ./UD_English-ParTUT/en_partut-ud-test.conllu > TESTINGOUTEN.conllu`
 
 
 Evaluate parser performance
-
 `python3 ./evaluation_script/conll17_ud_eval.py --verbose ./UD_English-ParTUT/en_partut-ud-test.conllu TESTINGOUTEN.conllu`
 
 Metrics    | Precision |    Recall |  F1 Score | AligndAcc
-
 -----------+-----------+-----------+-----------+-----------
 Tokens     |    100.00 |    100.00 |    100.00 |
-
 Sentences  |    100.00 |    100.00 |    100.00 |
-
 Words      |    100.00 |    100.00 |    100.00 |
-
 UPOS       |    100.00 |    100.00 |    100.00 |    100.00
-
 XPOS       |    100.00 |    100.00 |    100.00 |    100.00
-
 Feats      |    100.00 |    100.00 |    100.00 |    100.00
-
 AllTags    |    100.00 |    100.00 |    100.00 |    100.00
-
 Lemmas     |    100.00 |    100.00 |    100.00 |    100.00
-
 UAS        |     86.77 |     86.77 |     86.77 |     86.77
-
 LAS        |     85.18 |     85.18 |     85.18 |     85.18
 
 
