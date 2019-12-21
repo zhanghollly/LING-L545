@@ -1,3 +1,5 @@
+import codecs
+import sys
 #maxmatch algorithm
 
 def maxmatch(sentence, dictionary):
@@ -13,21 +15,38 @@ def maxmatch(sentence, dictionary):
     return list(firstword, maxmatch(remainder, dictionary))
 
 def inDict(firstword, dictionary):
-    return "blah"
-    #read the token dictionary written in a file
+    """string, dictionary -> boolean"""
+    if dictionary.get(firstword, "Not in the dict") != "Not in the dict":
+        return true
+    return false
 
-def createDict(in_file, out_file):
-    return "blah"
-    #reads each line of in_file
-    #calls tokenise to tokenize each sentence
-    #writes the new tokens into outfile
+def readTokenDict(filename):
+    """string -> dictionary"""
+    #read the token dictionary written in a file and create a dictionary in python
+    tokenDict = dict()
+    with codecs.open(filename, 'r', encoding='utf8') as file:
+        #get each token and add it to the dictionary as a key
+        for line in file:
+            token = line.strip('\n')
+            tokenDict[token] = 1
+    file.close()
+    return tokenDict
 
-def tokenise():
-    return "blah"
-    #tokenise each sentence
 
-def wordErrorRate():
+if __name__ == "__main__":
+    if(len(sys.argv) != 3):
+        raise Exception('Please provide three commandline arguments.')
+    (dictionary_file, sentence) = sys.argv[1:]
 
+    #create the token dictionary
+    tokenDict = readTokenDict(dictionary_file)
 
-def main():
+    #get tokens from the sentence using maxmatch and display them
+    predictedTokens = maxmatch(sentence, tokenDict)
+    for pt in predictedTokens:
+        print(pt)
 
+##    logics = { "human" : human_IJK.next_move, "ai" : ai_IJK.next_move }
+##    deterministic = { "det" : True, "nondet" : False }
+
+##    IJK(logics[p1], logics[p2], deterministic[mode])
